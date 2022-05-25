@@ -7,7 +7,7 @@ function RecipeCreate({createRecipe}) {
     cuisine: "",
     photo: "",
     ingredients: "",
-    preparations: "",
+    preparation: "",
   };
   
   const [formData, setFormData] = useState(initialFormState );
@@ -58,12 +58,12 @@ function RecipeCreate({createRecipe}) {
             </td>
             <td>
               <label htmlFor="ingredients">
-              <textarea id="ingredients" type="text" rows={2} name="ingredients" placeholder="Ingredients" onChange={handleText} required />
+              <textarea id="ingredients" type="text" rows={2} name="ingredients" placeholder="Ingredients" onChange={handleText} value={formData.ingredients} required />
               </label>
             </td>
             <td >
               <label htmlFor="preparation">
-              <textarea id="preparation" type="text" rows={2} name="preparation" placeholder="Preparation" onChange={handleText} required/>              
+              <textarea id="preparation" type="text" rows={2} name="preparation" placeholder="Preparation" onChange={handleText} value={formData.preparation} required/>              
               </label>
             </td>
             <td>
