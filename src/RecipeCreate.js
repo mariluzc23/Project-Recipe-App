@@ -43,30 +43,27 @@ function RecipeCreate({createRecipe}) {
           <tr>
             <td>
               <label htmlFor="name">
-                <input id="name" type="text" name="name" placeholder="Name" onChange={handleText} value={formData.name}/>
+                <input id="name" type="text" name="name" placeholder="Name" onChange={handleText} value={formData.name} required/>
               </label>
             </td>
             <td>
               <label htmlFor="cuisine">
-              <input id="name" type="text" name="cuisine" placeholder="Cuisine" onChange={handleText} value={formData.cuisine}/>
+              <input id="name" type="text" name="cuisine" placeholder="Cuisine" onChange={handleText} value={formData.cuisine} required/>
               </label>
             </td>
             <td>
               <label htmlFor="photo">
-                <input id="photo" type="url" name="photo" placeholder="URL" onChange={handleText} value={formData.photo}/>         
+                <input id="photo" type="url" name="photo" placeholder="URL" onChange={handleText} value={formData.photo} required/>         
               </label>
             </td>
             <td>
-              <p className="content_td">{formData.ingredients}</p>
               <label htmlFor="ingredients">
-              <textarea id="ingredients" type="text" rows={2} name="ingredients" placeholder="Ingredients" onChange={handleText}  />
+              <textarea id="ingredients" type="text" rows={2} name="ingredients" placeholder="Ingredients" onChange={handleText} required />
               </label>
             </td>
             <td >
               <label htmlFor="preparation">
-                <p className="content_td"> {formData.preparation} </p>
-              <textarea id="preparation" type="text" rows={2} name="preparation" placeholder="Preparation" onChange={handleText} />
-               
+              <textarea id="preparation" type="text" rows={2} name="preparation" placeholder="Preparation" onChange={handleText} required/>              
               </label>
             </td>
             <td>
